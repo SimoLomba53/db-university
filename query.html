@@ -13,5 +13,12 @@
     <p>SELECT * FROM `courses` WHERE `cfu`> 10;</p>
     <h1>TERZA QUERY</h1>
     <p>SELECT * FROM `students` WHERE YEAR(`date_of_birth`) < 1993;</p>
+    <h1>QUARTA QUERY</h1>
+    <p>SELECT * FROM `courses` WHERE `year`=1 AND `period`='I semestre';</p>
+    <h1>QUINTA QUERY</h1>
+    <p>
+      SELECT * FROM `exams` WHERE `hour`BETWEEN '14:00:00' AND '23:59:59' AND
+      `date`='2020-06-20';
+    </p>
   </body>
 </html>
