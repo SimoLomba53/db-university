@@ -19,5 +19,16 @@
       `department_id`=`degrees`.`id` WHERE `degrees`.`level`= "magistrale" AND
       `departments`.`name`=" Dipartimento di Neuroscienze"
     </p>
+    <h1>QUERY 3</h1>
+    <p>
+      SELECT * FROM `courses` JOIN `teachers` ON `courses`.`id`=`teachers`.`id`
+      WHERE `teachers`.`name`="Fulvio"
+    </p>
+    <h1>QUERY 4</h1>
+    <p>
+      SELECT `students`.`name`,`students`.`surname`,`degrees`.`name` FROM
+      `students` JOIN `degrees`ON `students`.`degree_id`=`degrees`.`id` ORDER BY
+      `students`.`name`,`students`.`surname`;
+    </p>
   </body>
 </html>
