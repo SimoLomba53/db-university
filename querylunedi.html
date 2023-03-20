@@ -30,5 +30,18 @@
       `students` JOIN `degrees`ON `students`.`degree_id`=`degrees`.`id` ORDER BY
       `students`.`name`,`students`.`surname`;
     </p>
+    <h1>QUERY 5</h1>
+    <p>
+      SELECT
+      `degrees`.`name`,`degrees`.`level`,`teachers`.`name`,`teachers`.`surname`
+      FROM `degrees` JOIN `teachers` ON `degrees`.`id`=`teachers`.`id`;
+    </p>
+    <h1>QUERY 6</h1>
+    <p>
+      SELECT * FROM `departments` JOIN `teachers` ON
+      `departments`.`id`=`teachers`.`id` WHERE
+      `departments`.`name`="Dipartimento Di Matematica";
+    </p>
+    <p>chiedere spiegazioni perchè risultato non corretto</p>
   </body>
 </html>
