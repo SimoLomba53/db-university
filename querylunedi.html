@@ -43,5 +43,23 @@
       `departments`.`name`="Dipartimento Di Matematica";
     </p>
     <p>chiedere spiegazioni perchè risultato non corretto</p>
+    <h1>QUERY GROUP BY 1</h1>
+    <p>
+      SELECT COUNT(*), YEAR(`enrolment_date`) FROM `students` GROUP BY YEAR
+      (`enrolment_date`)
+    </p>
+    <h1>QUERY GROUP BY 2</h1>
+    <p>
+      SELECT COUNT(*) AS 'numero degli insegnanti', `office_address` FROM
+      `teachers` GROUP BY `office_address`;
+    </p>
+    <h1>QUERY GROUP BY 3</h1>
+    <p>
+      SELECT `exam_id`,ROUND(AVG(`vote`)) FROM `exam_student` GROUP BY `exam_id`
+    </p>
+    <h1>QUERY GROUP BY 4</h1>
+    <p>
+      SELECT COUNT(*), `department_id` FROM `degrees` GROUP BY `department_id`
+    </p>
   </body>
 </html>
